@@ -5,18 +5,21 @@ public class Repartidor extends Persona {
   protected String medio_trasnporte;
   protected int tiempo_estimado_llegado;
   protected int score;
+  protected String num_telefono;
 
   public Repartidor(
     int tiempo_estimado_llegado,
     int score,
     String medio_trasnporte,
     String nombre,
-    int edad
+    int edad,
+    String num_telefono
   ) {
     super(nombre, edad);
     this.tiempo_estimado_llegado = tiempo_estimado_llegado;
     this.medio_trasnporte = medio_trasnporte;
     this.score = score;
+    this.num_telefono = num_telefono;
   }
 
   // SOBREESCRIBE SETTERS
